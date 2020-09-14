@@ -25,17 +25,23 @@ namespace _123
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Button button = new Button();
-
-            button1.DialogResult = DialogResult.OK;
-
-            progressBar1.Value++;
 
             int x = 10;
 
-            //MessageBox.Show($"Казино взломано на {x} %", x.ToString());
-            //x++;
+            for (int i = 0; i < 100; i++)
+            {
+                //MessageBox.Show($"Казино взломано на {x} %", x.ToString());
+                //x++;
+                progressBar1.Value++;
+                Thread.Sleep(100);
 
+                if (progressBar1.Value >= 14)
+                {
+                    MessageBox.Show("Казино взломано на 14%, выведено 1488$. Продолжить? ");
+                    // блять софтлок
+
+                }
+            }
         }
 
         private void progressBar1_Click(object sender, EventArgs e)
@@ -45,13 +51,8 @@ namespace _123
             progressBar1.Minimum = 0;
             progressBar1.Step = 50;
 
-            /*
-            for (int i = 0; i < 100; i++)
-            {
-                progressBar1.Value++;
-                Thread.Sleep(100);
-            }
-            */
+        
+            
         }
     }
 }
