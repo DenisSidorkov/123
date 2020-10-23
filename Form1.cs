@@ -37,6 +37,11 @@ namespace _123
                     MessageBox.Show("Казино взломано на 14%, выведено 6000000$. Продолжить? ");
           
                 }
+
+                if (progressBar1.Value == progressBar1.Maximum)
+                  break;
+
+                
             }
         }
 
@@ -50,5 +55,15 @@ namespace _123
         
             
         }
+
+    private void textBox1_TextChanged(object sender, EventArgs e)
+    {
+      
     }
+
+    private void textBox1_TextChanged_1(object sender, EventArgs e)
+    {
+
+    }
+  }
 }
