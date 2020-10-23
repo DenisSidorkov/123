@@ -25,9 +25,6 @@ namespace _123
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-            int x = 10;
-
             for (int i = 0; i < 100; i++)
             {
                 //MessageBox.Show($"Казино взломано на {x} %", x.ToString());
@@ -35,14 +32,11 @@ namespace _123
                 progressBar1.Value++;
                 Thread.Sleep(100);
 
-                if (progressBar1.Value = 14)
+                if (progressBar1.Value == 14)
                 {
                     MessageBox.Show("Казино взломано на 14%, выведено 6000000$. Продолжить? ");
-                    
-
-                } else { 
-          progressBar1.Value++;
-        }
+          
+                }
             }
         }
 
